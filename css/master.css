@@ -1,0 +1,619 @@
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+#renderPage{
+    background-color:#2c3e50;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sk-cube-grid {
+    width: 60px;
+    height: 60px;
+    margin: 100px auto;
+  }
+  
+  .sk-cube-grid .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: #fff;
+    float: left;
+    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+            animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+  }
+  .sk-cube-grid .sk-cube1 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  .sk-cube-grid .sk-cube2 {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s; }
+  .sk-cube-grid .sk-cube3 {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s; }
+  .sk-cube-grid .sk-cube4 {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s; }
+  .sk-cube-grid .sk-cube5 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  .sk-cube-grid .sk-cube6 {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s; }
+  .sk-cube-grid .sk-cube7 {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s; }
+  .sk-cube-grid .sk-cube8 {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s; }
+  .sk-cube-grid .sk-cube9 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  
+  @-webkit-keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+      -webkit-transform: scale3D(1, 1, 1);
+              transform: scale3D(1, 1, 1);
+    } 35% {
+      -webkit-transform: scale3D(0, 0, 1);
+              transform: scale3D(0, 0, 1); 
+    }
+  }
+  
+  @keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+      -webkit-transform: scale3D(1, 1, 1);
+              transform: scale3D(1, 1, 1);
+    } 35% {
+      -webkit-transform: scale3D(0, 0, 1);
+              transform: scale3D(0, 0, 1);
+    } 
+  }
+
+/* button up to down */
+#goUp{
+    height: 40px;
+    z-index: 99999;
+    width: 40px;
+    right: 46px;
+    bottom: 36px;
+    border-radius: 50%;
+    color: white;
+    padding: 25px;
+    background-color: #a12c2f;
+    display: none;
+}
+
+#goUp .content-up{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* Start Navbar*/
+#myNav{
+    transition: background-color .3s ;
+    z-index: 999999999;
+}
+.bg-mynav{
+    background-color: rgba(250,250,250,0.15);
+}
+.navbar-dark .navbar-brand{
+    font-size:30px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.navbar-collapse{
+    font-size: 14px;
+    font-weight: 600;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #FFF ;
+    position: relative;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    color:#f5a425;
+}
+
+@media (min-width:991px) {
+    .navbar-dark .navbar-nav .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: -22px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 5px;
+        background-color: #f5a425;
+        transition: .3s;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover::before{
+        width: 100%;
+    }
+}
+
+.dropdown-item{
+    font-size: 15px;
+    font-weight: 400;
+    transition: .3s;
+}
+
+.dropdown-item:hover{
+    color: #f5a425;
+    background-color: #fff;
+}
+
+/* End Navbar*/
+
+/*Start Header*/
+#myheader{
+    position: relative;
+}
+#overlay{
+    content: "";
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31,39,43,0.75);
+}
+#myvideo{
+    min-width: 100%;
+    min-height: 100vh;
+    max-width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+ .container .caption h6{
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+ .container .caption h2{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+ .container .caption p{
+    font-size: 17px;
+    max-width: 500px;
+}
+.main-button {
+    background-color: #a12c2f;
+    padding: 12px 30px;
+    border-radius: 22px;
+    font-size: 13px;
+    font-weight: 500;
+}
+/*End Header*/
+
+/* Start Services*/
+#services{
+    position:absolute;
+    margin-top: -135px;
+    width: 100%;
+}
+
+@media(max-width:991px){
+    #services{
+        margin-top: -35px;
+    }
+}
+
+#services .box{
+    background-color:#a12c2f;
+    color:white;
+    border-radius: 20px;
+    background-image: url("../images/service-item-bg.jpg");
+    background-size: cover;
+}
+/* End Services*/
+
+/* Start upcoming-meeting*/
+
+#upcoming-meeting{
+    background-image: url("../images/meetings-page-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding-top: 230px;
+    padding-bottom: 110px;
+    z-index: -1;
+}
+
+@media (max-width: 767px){
+#upcoming-meeting {
+    padding-top: 920px;
+}
+}
+@media (min-width: 770px){
+    #upcoming-meeting {
+        padding-top: 350px;
+  }
+}
+
+@media (min-width: 991px){
+        #upcoming-meeting {
+            padding-top: 230px;
+     }
+ }
+
+ #upcoming-meeting .boxing{
+    border-radius: 20px;
+ }
+ #upcoming-meeting .meeting-gallery img{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+  .boxing ul li a:hover{
+   color:#f5a425 !important ;
+ }
+
+ #upcoming-meeting .box .meeting-gallery span {
+    left: 18px;
+    top: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: #ccc;
+}
+
+#upcoming-meeting .box {
+    border-radius: 20px;
+}
+.box .content-meeting h6 {
+color:#a12c2f;
+}
+.box .content-meeting h6 span {
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+.box .content-meeting a{
+    color:#000;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 5px;
+    
+}
+
+/* Start upcoming-meeting*/
+
+/* Start Apply*/
+
+#apply{
+    background-image: url("../images/apply-bg.jpg");
+    background-size: cover;
+    z-index: -1;
+}
+#apply .apply-box{
+    background-color: rgba(250,250,250,0.15);
+}
+
+#apply .apply-box .main-button2{
+    background-color: #f5a425;
+    padding: 12px 30px;
+    border-radius: 22px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.accordion-item{
+    padding: 1rem;
+}
+.accordion-button{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.accordion-button:not(.collapsed) {
+    color: #f5a425 ;
+    background-color: #fff ;
+}
+
+.accordion-button:focus{
+    border-color: #fff  ;
+    box-shadow: 0 0 0;
+}
+.accordion-body{
+    padding: 1rem 1.25rem;
+    font-size: 14px;
+    line-height: 25px;
+    color: #2a2a2a;
+}
+/* End Apply*/
+
+/* Start Courses*/
+
+#courses{
+    background-image: url("../images/meetings-page-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding-top: 230px;
+    padding-bottom: 110px;
+    z-index: -1;
+}
+
+#courses .courser-info .info ul li i{
+    color: #f5a425;
+    font-size: 14px;
+}
+
+#courses .courser-info .info span{
+    color: #a12c2f;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: right;
+    display: inline-block;
+    width: 100%;
+}
+
+ #courses .courser-info h4{
+    padding: 25px;
+    font-size: 18px;
+    color: #1f272b;
+    border-bottom: 1px solid #eee;
+}
+
+/* End Courses*/
+
+/* Start About */
+#about{
+    background-image: url("../images/facts-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding-top: 230px;
+    padding-bottom: 110px;
+    z-index: -1;
+}
+
+#about .item {
+    background-color: rgba(250,250,250,0.15);
+    border-radius: 20px;
+    padding: 25px 30px 35px 30px;
+    margin: 15px 0px;
+}
+
+#about .item .persenige{
+    margin: 5px 0px;
+    color: #f5a425;
+    font-weight: 700;
+    font-size: 36px;
+    position: relative;
+}
+
+#about .item .persenige::after {
+    content: " % ";
+    position: absolute;
+}
+
+#about .item span{
+    margin: 5px 0px;
+    color: #f5a425;
+    font-weight: 700;
+    font-size: 36px;
+    position: relative;
+}
+
+#about .video{
+    text-align:center;
+    margin-top: 80px; 
+}
+#about .video img {
+    border-radius: 20px;
+}
+/* End About */
+
+/*<!-- Start Contact Us-->*/
+#contact-us{
+    background-image: url("../images/meetings-page-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding-top: 230px;
+    padding-bottom: 110px;
+    z-index: -1;
+}
+
+.bg-input{
+    background-color: #EEE;
+    border-radius: 10px;
+}
+#contact-us .contact-box{
+    border-radius: 20px;
+}
+#contact-us .contact-box textarea {
+    max-height: 170px;
+    min-height: 170px;
+}
+
+#contact-us .contact-box a{
+    padding: 15px 25px;
+    background-color: #a12c2f;
+    border-radius: 20px;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#contact-us .info-content{
+    background-color: #a12c2f;
+    border-radius: 20px;
+}
+
+footer p{
+    font-size: 14px;
+}
+
+/*<!-- End Contact Us-->*/
+
+/* page Metting */ 
+
+#header-metting{
+background-image: url("../images/heading-bg.jpg");
+background-size: cover;
+background-position: center center ;
+}
+
+#header-metting .title-head {
+    position: absolute;
+    top: 200px;
+    transform: translatey(50%);
+}
+#header-metting .title-head h6{
+    margin-top: 0px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#header-metting .title-head h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+#master-metting{
+    background-image: url("../images/meetings-bg.jpg");
+    background-size: cover;
+    background-position: center center ;
+}
+
+
+#upcomings-meeting .boxing{
+    border-radius: 20px;
+ }
+ 
+
+ #upcoming-meetings .box .meeting-gallery span {
+    left: 18px;
+    top: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: #ccc;
+}
+
+#upcoming-meetings .box {
+    border-radius: 20px;
+}
+
+#upcoming-meetings .meeting-gallery img{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.box .content-meetings h6 {
+color:#a12c2f;
+}
+.box .content-meetings h6 span {
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+.box .content-meeting a{
+    color:#000;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 5px;   
+}
+
+
+.nav-pills .nav-link{
+    background-color: white;
+    color: #a12c2f;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 22px;
+    padding: 11px 30px;
+    margin: 5px 5px;
+}
+
+.nav-pills .nav-link.active{
+    color: #fff;
+    background-color: #a12c2f;
+}
+
+/* Page Meeting Detail*/
+
+#metting-detail .meeting-gallery span{
+    left: 15px;
+    top: 15px;
+    background-color: #eee;
+    padding: 6px 15px;
+    border-radius: 11px;
+    font-size: 17px;
+    font-weight: 600;
+}
+#metting-detail{
+    border-radius: 22px;
+}
+.meeting-gallery .title-badge{
+    top: 15px;
+    right: 15px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    padding: 0 17px;
+    border-radius: 10px;
+    align-items: center;
+    color: #a12c2f;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.meeting-gallery .title-badge span{
+    color: #000;
+}
+
+#master-metting .content-meeting h4{
+    font-size: 22px;
+    color: #1f272b;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+#master-metting .content-meeting h5{
+    font-size: 22px;
+    color: #1f272b;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 15px; 
+    margin-right: 10px
+}
+
+#master-metting .content-meeting p{
+    color: #1f272b;
+    font-size: 14px;
+}
+
+#master-metting .content-meeting a{
+    font-size: 14px;
+    color: #1f272b;
+    transition: all .3s;
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+#master-metting .content-meeting a:hover{
+    color: #f5a425;
+}
+

@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education Meeting</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/master.css">
+
+  <script  src="js/jquery-3.6.1.min.js" ></script>
+  <script  src="js/popper.min.js" ></script>
+  <script  src="js/bootstrap.min.js" ></script>
+  
+</head>
+<body>
+
+  <div id="renderPage"  >
+    <div class="sk-cube-grid">
+      <div class="sk-cube sk-cube1"></div>
+      <div class="sk-cube sk-cube2"></div>
+      <div class="sk-cube sk-cube3"></div>
+      <div class="sk-cube sk-cube4"></div>
+      <div class="sk-cube sk-cube5"></div>
+      <div class="sk-cube sk-cube6"></div>
+      <div class="sk-cube sk-cube7"></div>
+      <div class="sk-cube sk-cube8"></div>
+      <div class="sk-cube sk-cube9"></div>
+    </div>
+  </div>
+
+  <!-- Start Navbar-->
+  <nav id="myNav" class="navbar navbar-expand-lg navbar-dark bg-mynav fixed-top py-3">
+    <div class="container">
+      <a class="navbar-brand text-uppercase" href="index.html">
+        Edu Meeting
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item text-uppercase ">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="meeting.html">Mettings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#apply">Apply Now</a>
+          </li>
+         
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="meeting.html">Upcoming Meetings</a></li>
+              <li><a class="dropdown-item" href="metting-detail.html">Meeting Details</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#courses">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-us">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ <!-- End Navbar-->
+
+ <!-- Start go to up -->
+ <div id="goUp" class="position-fixed">
+  <div class="content-up" >
+    <i class=" fas fa-arrow-up  fa-2x " ></i>
+  </div>
+ </div>
+ <!-- End go to up -->
+
+ <!-- Start Header-->
+ <header id="myheader">
+  <div>
+  <video id="myvideo" autoplay muted loop width="" height="" controls>
+    <source src="images/course-video.mp4" type="video/mp4">
+  </video>
+</div>
+<div id="overlay"></div>
+<div class="container position-absolute top-50 translate-middle-y  px-5">
+  <div class="row">
+    <div class="col">
+      <div class="caption text-white">
+      <h6 class="py-3">HELLO STUDENTS</h6>
+      <h2 class="pb-2">WELCOME TO EDUCATION</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, eveniet ullam? Vel in nesciunt laborum enim, hic placeat sint
+         itaque magni quod molestias aspernatur cumque ipsum repellat accusantium reiciendis suscipit?
+        </p>
+      </div>
+      <div class="py-4">
+       <a class="text-uppercase text-decoration-none text-white main-button" href="#contact-us">
+        Join Us Now!
+      </a>
+      </div>
+    </div>
+  </div>
+</div>
+ </header>
+ <!-- End Header-->
+
+ <!-- Start Services-->
+ <section id="services">
+  <div class="container py-5 text-center">
+   
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <div class="row">
+            <div class="col-md-4 col-lg-4">
+              <div class="box p-4 my-3 shadow ">
+                <div class="box-icon py-4">
+                  <img src="images/service-icon-01.png" alt="">
+                </div>
+                <div class="content-box pb-4">
+                  <h4> Best Teacher</h4>
+                  <p>
+                    Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-4 ">
+              <div class="box p-4  my-3 shadow ">
+                <div class="box-icon py-4">
+                  <img src="images/service-icon-02.png" alt="">
+                </div>
+                <div class="content-box pb-4">
+                  <h4> Best Student</h4>
+                  <p>
+                    Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-4">
+              <div class="box p-4  my-3  shadow ">
+                <div class="box-icon py-4">
+                  <img src="images/service-icon-03.png" alt="">
+                </div>
+                <div class="content-box pb-4">
+                  <h4> Oline Metting</h4>
+                  <p>
+                    Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <div class="row">
+            <div class="col-md-4 col-lg-4">
+              <div class="box p-4 my-3 shadow ">
+                <div class="box-icon py-4">
+                  <img src="images/service-icon-01.png" alt="">
+                </div>
+                <div class="content-box pb-4">
+                  <h4> Best Teacher</h4>
+                  <p>
+                    Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-4 ">
+              <div class="box p-4  my-3 shadow ">
+                <div class="box-icon py-4">
+                  <img src="images/service-icon-02.png" alt="">
+                </div>
+                <div class="content-box pb-4">
+                  <h4> Best Student</h4>
+                  <p>
+                    Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-4">
+              <div class="box p-4  my-3  shadow ">
+                <div class="box-icon py-4">
+                  <img src="images/service-icon-03.png" alt="">
+                </div>
+                <div class="content-box pb-4">
+                  <h4> Oline Metting</h4>
+                  <p>
+                    Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-4 col-lg-4">
+              <div class="box p-4 my-3 shadow ">
+                <div class="box-icon py-4">
+                  <img src="images/service-icon-01.png" alt="">
+                </div>
+                <div class="content-box pb-4">
+                  <h4> Best Teacher</h4>
+                  <p>
+                    Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-4 ">
+              <div class="box p-4  my-3 shadow ">
+                <div class="box-icon py-4">
+                  <img src="images/service-icon-02.png" alt="">
+                </div>
+                <div class="content-box pb-4">
+                  <h4> Best Student</h4>
+                  <p>
+                    Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-4">
+              <div class="box p-4  my-3  shadow ">
+                <div class="box-icon py-4">
+                  <img src="images/service-icon-03.png" alt="">
+                </div>
+                <div class="content-box pb-4">
+                  <h4> Oline Metting</h4>
+                  <p>
+                    Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  
+
+     </div>
+   
+ </section>
+ <!--  End Services-->
+
+ <!-- Start UPCOMING MEETINGS-->
+<section id="upcoming-meeting">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center ">
+        <h2 class="text-white py-5 border-bottom fw-bold ">UPCOMING MEETINGS</h2>
+      </div>
+      <div class="col-md-12 col-lg-4 text-md-center py-4 ">
+        <div class=" boxing bg-white p-5 ">
+          <h4 class="py-3 border-bottom">Meeting Catgories</h4>
+          <div>
+            <ul class=" list-unstyled text-decoration-none ">
+              <li class="pt-3">
+                <a class=" text-decoration-none text-dark " href="">Sed tempus enim leo</a>
+              </li>
+              <li class="pt-3">
+                <a class=" text-decoration-none text-dark  " href="">Aenean molestie quis</a>
+              </li>
+              <li class="pt-3">
+                <a class=" text-decoration-none text-dark " href="">Cras et metus vestibulum</a>
+              </li>
+              <li class="pt-3">
+                <a class=" text-decoration-none text-dark " href="">Nam et condimentum</a>
+              </li>
+              <li class="pt-3">
+                <a class=" text-decoration-none text-dark " href="">Phasellus nec sapien</a>
+              </li>
+            </ul>
+          </div>
+          <div class="border-top pt-5">
+            <a class=" text-decoration-none text-white main-button " href="meeting.html">All Upcoming Meetings</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 py-4   ">
+        <div class="box bg-white ">
+          <div class=" meeting-gallery position-relative " >
+            <img class="w-100" src="images/meeting-01.jpg" alt="">
+            <span class=" d-inline-block position-absolute  " >$22.00</span>
+          </div>
+          <div class="content-meeting py-3 ">
+         <div class="px-4">
+           <h6>Nov
+            <span class=" d-block text-dark ">10</span>
+           </h6>
+           <a class=" text-decoration-none " href="#">New Lecturers Meeting</a>
+         </div>
+         <div class="px-5">
+          <p>Morbi in libero blandit lectus
+            cursus ullamcorper.
+          </p>
+         </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 py-4   ">
+        <div class="box bg-white ">
+          <div class=" meeting-gallery position-relative " >
+            <img class="w-100" src="images/meeting-02.jpg" alt="">
+            <span class=" d-inline-block position-absolute  " >$36.00</span>
+          </div>
+          <div class="content-meeting py-3 ">
+         <div class="px-4">
+           <h6>Nov
+            <span class=" d-block text-dark ">24</span>
+           </h6>
+           <a class=" text-decoration-none " href="#">Online Teaching Techniques</a>
+         </div>
+         <div class="px-5">
+          <p>Morbi in libero blandit lectus
+            cursus ullamcorper.
+          </p>
+         </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 offset-lg-4 py-4 ">
+        <div class="box bg-white ">
+          <div class=" meeting-gallery position-relative " >
+            <img class="w-100" src="images/meeting-03.jpg" alt="">
+            <span class=" d-inline-block position-absolute  " >$14.00</span>
+          </div>
+          <div class="content-meeting py-3 ">
+         <div class="px-4">
+           <h6>Nov
+            <span class=" d-block text-dark ">26</span>
+           </h6>
+           <a class=" text-decoration-none " href="#">Online Teaching Techniques</a>
+         </div>
+         <div class="px-5">
+          <p>Morbi in libero blandit lectus
+            cursus ullamcorper.
+          </p>
+         </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4  py-4 ">
+        <div class="box bg-white ">
+          <div class=" meeting-gallery position-relative " >
+            <img class="w-100" src="images/meeting-04.jpg" alt="">
+            <span class=" d-inline-block position-absolute  " >$48.00</span>
+          </div>
+          <div class="content-meeting py-3 ">
+         <div class="px-4">
+           <h6>Nov
+            <span class=" d-block text-dark ">30</span>
+           </h6>
+           <a class=" text-decoration-none " href="#">Online Teaching Techniques</a>
+         </div>
+         <div class="px-5">
+          <p>Morbi in libero blandit lectus
+            cursus ullamcorper.
+          </p>
+         </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+ <!-- End UPCOMING MEETINGS-->
+
+ <!-- Start Apply Now-->
+<section id="apply" class=" py-5 ">
+  <div class="container py-5 ">
+    <div class="row">
+
+      <div class="col-lg-6">
+        <div class="row">
+          <div class=" col-lg-12 ">
+            <div class="apply-box text-white p-4 mb-4 ">
+              <h4 class=" fw-bold py-3 ">APPLY FOR BACHELOR DEGREE</h4>
+              <p class=" lh-base ">You are allowed to use this edu meeting CSS template
+                for your school or university or business. You can feel free to modify or edit this layout.
+              </p>
+              <div class="py-4">
+                <a class=" main-button text-white text-decoration-none" href="#">JOIN US NOW!</a>
+              </div>
+            </div>
+          </div>
+
+          <div class=" col-lg-12">
+            <div class="apply-box text-white p-4 mb-4 ">
+              <h4 class=" fw-bold py-3 ">APPLY FOR BACHELOR DEGREE</h4>
+              <p class=" lh-base ">You are allowed to use this edu meeting CSS template
+                for your school or university or business. You can feel free to modify or edit this layout.
+              </p>
+              <div class="py-4">
+                <a class=" main-button2 text-white text-decoration-none" href="#">JOIN US NOW!</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-lg-6  ">
+        <div class="accordings" >
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne">
+                About Edu Meeting HTML Template
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+                If you want to get the latest collection of HTML CSS templates for your websites, you may visit Too CSS
+                website.
+                If you need a working contact form script, please visit our contact page for
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo">
+                HTML CSS Bootstrap Layout
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body">
+                Etiam posuere metus orci, vel consectetur elit imperdiet eu. Cras ipsum magna, maximus at semper sit
+                amet, eleifend eget neque. Nunc facilisis quam purus,
+                sed vulputate augue interdum vitae. Aliquam a elit massa.
+                Nulla malesuada elit lacus, ac ultricies massa varius sed. Etiam eu metus eget nibh consequat aliquet.
+                Proin fringilla,
+                quam at euismod porttitor, odio odio tempus ligula, ut feugiat ex erat nec mauris.
+                Donec viverra velit eget lectus sollicitudin tincidunt.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree">
+                Please tell your friends
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingThree">
+              <div class="accordion-body">
+                Ut vehicula mauris est, sed sodales justo rhoncus eu. Morbi porttitor quam velit, at ullamcorper justo
+                suscipit sit amet.
+                Quisque at suscipit mi, non efficitur velit.
+                Cras et tortor semper, placerat eros sit amet, porta est. Mauris porttitor sapien et quam volutpat
+                luctus.
+                Nullam sodales ipsum ac neque ultricies varius.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseFour">
+                Share this to your colleagues
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingFour">
+              <div class="accordion-body">
+                Maecenas suscipit enim libero, vel lobortis justo condimentum id. Interdum et malesuada fames ac ante
+                ipsum primis in faucibus.
+                Sed eleifend metus sit amet magna tristique, posuere laoreet arcu semper. Nulla pellentesque ut tortor
+                sit amet maximus. In eu libero ullamcorper,
+                semper nisi quis, convallis nisi.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+ <!-- End Apply Now-->
+
+ <!-- Start our courses -->
+<section id="courses" class="  py-5 ">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading pt-5 pb-3 border-bottom">
+          <h2 class=" text-white  fw-bold " >Our Popular Courses</h2>
+        </div>
+      </div>
+
+      <div id="myanimate" class="row py-5  ">
+
+        <div class="col-lg-3 col-md-6 col-sm-6  ">
+          <div class="cource-box my-2 text-center">
+            <div>
+              <img class=" w-100 " src="images/course-01.jpg" alt="">
+            </div>
+            <div class="courser-info bg-white ">
+              <h4> Web Design Templates at Your Finger Tips </h4>
+              <div class="info p-3 ">
+                <div class="row ">
+                  <div class="col-8">
+                    <ul class=" d-flex list-unstyled ">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <span>$270</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6  col-sm-6 ">
+          <div class="cource-box my-2 text-center">
+            <div>
+              <img class=" w-100 " src="images/course-03.jpg" alt="">
+            </div>
+            <div class="courser-info bg-white ">
+              <h4> Curabitur molestie dignissim purus </h4>
+              <div class="info p-3 ">
+                <div class="row ">
+                  <div class="col-8">
+                    <ul class=" d-flex list-unstyled ">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <span>$150</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 ">
+          <div class="cource-box my-2 text-center">
+            <div>
+              <img class=" w-100 " src="images/course-02.jpg" alt="">
+            </div>
+            <div class="courser-info bg-white ">
+              <h4> Lorem ipsum dolor sit amet adipiscing elit </h4>
+              <div class="info p-3 ">
+                <div class="row ">
+                  <div class="col-8">
+                    <ul class=" d-flex list-unstyled ">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <span>$240</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+   
+        <div class="col-lg-3 col-md-6 col-sm-6  ">
+          <div class="cource-box my-2 text-center">
+            <div>
+              <img class=" w-100 " src="images/course-04.jpg" alt="">
+            </div>
+            <div class="courser-info bg-white ">
+              <h4> Please visit our website again </h4>
+              <div class="info p-3 ">
+                <div class="row ">
+                  <div class="col-8">
+                    <ul class=" d-flex list-unstyled ">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <span>$140</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End our courses -->
+
+<!-- Start Our About-->
+<section id="about" class="py-5" >
+  <div class="container py-5 ">
+    <div class="row">
+     <div class="col-lg-6">
+      <div class="about border-bottom">
+          <h2 class=" text-white fw-bold " >A Few Facts About Our University</h2>
+          <div class="row py-5">
+            <div class="col-lg-6">
+              <div class="item text-center">
+                <span class=" persenige d-inline-block " > 93</span>
+                <h5 class=" text-white " >Succesed Student</h5>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="item text-center">
+                <span class=" d-inline-block " > 2319</span>
+                <h5 class=" text-white " >New Students</h5>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="item text-center">
+                <span class=" d-inline-block " > 125</span>
+                <h5 class=" text-white " >Current Teachers</h5>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="item text-center">
+                <span class=" d-inline-block " > 32</span>
+                <h5 class=" text-white">Awards</h5>
+              </div>
+            </div>
+            
+          </div>
+      </div>
+     </div>
+
+     <div class="col-lg-5 offset-lg-1 ">
+      <div class="video">
+        <img class=" w-100 " src="images/video-item-bg.jpg" alt="">
+      </div>
+    </div>
+
+    </div>
+  </div>
+</section>
+<!-- End Our About-->
+
+<!-- Start Contact Us-->
+<section id="contact-us" class=" py-5 " >
+  <div class="container py-5 ">
+<div class="row">
+  <div class="col-lg-9  ">
+    <div class="contact-box bg-white p-4 mt-4 ">
+      <h4 class=" fw-bold py-3 border-bottom " >LET'S GET IN TOUCH</h4>
+      <div class="row py-4">
+        <div class="col-lg-4 mt-3 ">
+          <input class="form-control border-0 bg-input" type="text" name="" id="" placeholder="YourName..." >
+        </div>
+        <div class="col-lg-4 mt-3 ">
+          <input class="form-control border-0 bg-input " type="text" name="" id="" placeholder="YourEmail...">
+        </div>
+        <div class="col-lg-4 mt-3 ">
+          <input class="form-control border-0 bg-input " type="text" name="" id="" placeholder="YourSubject..." >
+        </div>
+      </div>
+     <textarea  placeholder="Your Message " class=" form-control border-0  bg-input " name="" id="" ></textarea>
+     <div class="py-4">
+      <a class="text-decoration-none" href="#">SEND MESSAGE NOW</a>
+     </div>
+    </div>
+
+  </div>
+  <div class="col-lg-3  col-md-6 mt-4">
+    <div class="info-content p-3 ">
+      <div class="row text-center text-white pb-4  ">
+        <div class="col-lg-12">
+          Phone Number
+        </div>
+        <div class="col-lg-12  "> 011-2512-9225</div>
+      </div>
+      <div class="row text-center text-white pb-4  ">
+        <div class="col-lg-12">
+          Email Address
+        </div>
+        <div class="col-lg-12">info@meeting.edu</div>
+      </div>
+
+      <div class="row text-center text-white pb-4 ">
+        <div class="col-lg-12">
+          Phone Number
+        </div>
+        <div class="col-lg-12"> 011-2512-9225</div>
+      </div>
+      <div class="row text-center text-white pb-4  ">
+        <div class="col-lg-12">
+          Street Address
+        </div>
+        <div class="col-lg-12">Rio de Janeiro - RJ, 22795-008, Brazil</div>
+      </div>
+
+      <div class="row text-center text-white pb-4 ">
+        <div class="col-lg-12">
+          Website URL
+        </div>
+        <div class="col-lg-12">www.meeting.edu</div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+  </div>
+    <footer class=" pt-4 text-center " >
+      <div class="  border-top pt-4 " >
+        <p class="text-white pt-3 " >COPYRIGHT © 2022 EDU MEETING CO., LTD. ALL RIGHTS RESERVED.</p>
+      </div>
+    </footer>
+</section>
+<!-- End Contact Us-->
+ 
+  <script  src="js/plagin.js" ></script>
+</body>
+</html>
+
